@@ -19,8 +19,8 @@ namespace Joystick {
         //% blockId="Press" block="按下"
         Press
     }
-	
-    //% blockId=cbit_Rocker block="遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value"
+
+    //% blockId=cbit_Rocker block="遥杆|引脚 VRX %pin1|引脚 VRY %pin2|引脚 SW %pin3|返回 %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -54,7 +54,7 @@ namespace Joystick {
         }
         if (z <= 20)
             now_state = enRocker.Press;
-        
+
         if (now_state == value)
             return true;
         else
